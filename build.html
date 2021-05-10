@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="nav-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/fr/a/ae/Ducati_logo.png" alt="logo" width="80px">
+      </div>
+      <div class="nav-links" id="nav-links">
+        <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Test Ride</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+          <button type="button" class="btn btn1">SIGN UP</button>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+    <div class="title">
+        <h1>
+          New Monster
+        </h1>
+        <p>
+          All the essence of Ducati in the lightest, most compact and essential
+          <br> 
+          form possible All that you need to have fun, every day.
+        </p>
+        <button type="button" class="btn btn2">DISCOVER MORE</button>
+    </div>
+    <div class="Vertical-bar">
+      <div class="search-icon">
+        <i class="fa fa-list"></i>
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="social-icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </div>
+
+
+    <script>
+      var show = document.getElementById("nav-links");
+      function showMenu(){
+        show.style.right = "0";
+      };
+      function closeMenu(){
+        show.style.right = "900px";
+      };
+    </script>
+</body>
+</html>
